@@ -101,9 +101,3 @@ data/processed/uplift_scores_sample.parquet
 ## Important Caveats
 
 The current results are based on sampled offline evaluation, not a deployed policy experiment. The S- and T-learner baselines also produced some unstable individual uplift predictions because conversion is rare. For production use, the next step would be stronger regularization, larger training samples, LightGBM/X-learner comparisons, calibration checks, and a follow-up randomized policy test.
-
-## Resume Bullet
-
-```text
-Trained S-/T-learner uplift models and used Qini/AUUC to identify a 10% budget policy with ~779% more incremental conversions than random.
-```
